@@ -55,7 +55,15 @@ The analysis follows a structured experimental framework:
 ### 4.1 Randomisation & Balance Checks
 Control (5,013) and Treatment (4,987) groups are well balanced, with no evidence of sample ratio mismatch.
 
-Pre-experiment sales and customer satisfaction metrics show no statistically significant differences between groups, confirming comparability prior to intervention.
+Pre-experiment sales and customer satisfaction metrics show no statistically significant differences between groups, confirming comparability prior to intervention (*p-value = 0.1375*).
+
+### Table 1: Pre-Experiment Means
+
+| Metric                         | Control    | Treatment  | Difference (Control − Treatment) |
+|--------------------------------|------------|------------|----------------------------------|
+| Sales Before ($)               | 203.03     | 204.67     | -1.65                            |
+| Customer Satisfaction Before   | 70.48      | 70.02      | 0.47                             |
+
 
 ### 4.2 Power Analysis
 The experiment is sufficiently powered to detect a minimum sales difference of **$3.11 per customer** at 80% power, ensuring sensitivity to economically meaningful effects.
@@ -93,6 +101,8 @@ The new store strategy delivers a statistically significant and economically mat
 
 A Difference-in-Differences analysis was also applied to customer satisfaction scores to assess potential trade-offs between revenue and customer experience.
 
+- Average Satisfaction (Control): **74.15**
+- Average satisfaction (Treatment): **73.69**
 - Net DID effect: **+0.01 points**
 - Statistical significance: **Not significant (p = 0.96)**
 
@@ -118,7 +128,7 @@ Difference-in-Differences interaction plots were used to visualise pre- and post
 <p align="left">
   <img src="did_sat_plot.png" width="900">
   <br>
-  <em>Figure 3: Difference-in-Differences: Satisifcation Impact</em>
+  <em>Figure 3: Difference-in-Differences: satisfaction Impact</em>
 </p>
 
 These visual patterns reinforce the statistical findings and support the parallel trends assumption.
