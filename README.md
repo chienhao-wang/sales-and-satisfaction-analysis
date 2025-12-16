@@ -15,9 +15,7 @@
 - [Customer Satisfaction Impact](#6-customer-satisfaction-impact)
 - [Visual Validation](#7-visual-validation)
 - [Key Findings](#8-key-findings)
-- [Management Decision](#9-management-decision)
-- [Business Impact (Illustrative)](#10-business-impact-illustrative)
-- [Limitations & Next Steps](#11-limitations--next-steps)
+- [Limitations & Next Steps](#9-limitations--next-steps)
 
 ---
 
@@ -143,17 +141,7 @@ These visual patterns reinforce the statistical findings and support the paralle
 
 ---
 
-## 9. Management Decision
-Based on strong causal evidence, we recommend rolling out the new store strategy to similar store formats. The expected revenue uplift outweighs implementation risk, with no adverse impact on customer experience.
-
----
-
-## 10. Business Impact (Illustrative)
-Assuming 100 customers per store per day, the estimated incremental revenue is approximately **$7,365 per store per day**, equivalent to **~$2.7M annually per store**.
-
----
-
-## 11. Limitations & Next Steps
+## 9. Limitations & Next Steps
 - The experiment captures short-term effects only
 - Results may vary across store size, region, or customer segments
 
@@ -164,7 +152,7 @@ Assuming 100 customers per store per day, the estimated incremental revenue is a
 
 ---
 
-## 12. Tools & Methods
+## 10. Tools & Methods
 - Python (pandas, scipy, statsmodels)
 - Statistical hypothesis testing
 - Difference-in-Differences methodology
