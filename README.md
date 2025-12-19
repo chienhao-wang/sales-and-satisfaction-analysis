@@ -13,7 +13,7 @@
 - [Experiment Validation & Readiness](#4-experiment-validation--readiness)
 - [Revenue Impact Analysis (Sales)](#5-revenue-impact-analysis-sales)
 - [Customer Satisfaction Impact](#6-customer-satisfaction-impact)
-- [Visual Validation](#7-visual-validation)
+- [Segment-Level Impact Analysis (Sales & Satisfaction)](#7-segment-level-impact-analysis-sales--satisfaction)
 - [Key Findings](#8-key-findings)
 - [Limitations & Next Steps](#9-limitations--next-steps)
 
@@ -91,7 +91,13 @@ Using a DID framework to control for baseline effects:
 - Statistical significance: **p < 0.001**
 
 **Conclusion:**  
-The new store strategy delivers a statistically significant and economically material increase in revenue, with strong causal evidence.
+Sales trends diverge clearly after intervention, with Treatment outperforming Control (see Figure 2). The new store strategy delivers a statistically significant and economically material increase in revenue, with strong causal evidence.
+
+<p align="left">
+  <img src="did_sales_plot.png" width="900">
+  <br>
+  <em>Figure 2: Difference-in-Differences: Sales Impact</em>
+</p>
 
 ---
 
@@ -105,23 +111,7 @@ A Difference-in-Differences analysis was also applied to customer satisfaction s
 - Statistical significance: **Not significant (p = 0.96)**
 
 **Conclusion:**  
-Revenue gains are achieved **without compromising customer satisfaction**.
-
----
-
-## 7. Visual Validation
-
-Difference-in-Differences interaction plots were used to visualise pre- and post-experiment trends:
-
-- Sales trends diverge clearly after intervention, with Treatment outperforming Control (see Figure 2)
-
-<p align="left">
-  <img src="did_sales_plot.png" width="900">
-  <br>
-  <em>Figure 2: Difference-in-Differences: Sales Impact</em>
-</p>
-
-- Satisfaction trends remain parallel across groups (See Figure 3)
+Satisfaction trends remain parallel across groups (See Figure 3). Revenue gains are achieved **without compromising customer satisfaction**.
 
 <p align="left">
   <img src="did_sat_plot.png" width="900">
@@ -129,7 +119,33 @@ Difference-in-Differences interaction plots were used to visualise pre- and post
   <em>Figure 3: Difference-in-Differences: satisfaction Impact</em>
 </p>
 
-These visual patterns reinforce the statistical findings and support the parallel trends assumption.
+---
+
+## 7. Segment-Level Impact Analysis (Sales & Satisfaction)
+
+To understand whether the store strategy performs differently across customer types, a segmented Difference-in-Differences (DID) analysis was conducted for **High-, Medium-, and Low-Value customers**.
+
+### Sales Impact by Segment  
+| Customer Segment | DID Uplift ($) | Relative Lift (%) | Statistical Significance |
+|------------------|---------------|-------------------|--------------------------|
+| High Value       | +81.28        | +30.4%            | Significant              |
+| Medium Value     | +73.61        | +30.3%            | Significant              |
+| Low Value        | +66.39        | +30.5%            | Significant              |
+
+The strategy delivers a **consistent relative uplift (~30%) across all segments**, with the **largest absolute revenue gain driven by High-Value customers**.
+
+<p align="left">
+  <img src="segment_sales_analysis.png" width="900">
+  <br>
+  <em>Figure 4: Average Sales After by Customer Segment and Group</em>
+</p>
+
+### Customer Satisfaction Impact by Segment
+No statistically significant changes in customer satisfaction are observed across any segment, indicating that the revenue uplift does not come at the expense of customer experience.
+
+### Segment-Level Conclusion
+While the strategy is effective across all customer segments, the **highest absolute ROI is achieved among High-Value customers**.
+This suggests that an initial rollout prioritising high-value segments would maximise short-term revenue impact, with broader rollout to other segments remaining low risk.
 
 ---
 
@@ -146,7 +162,6 @@ These visual patterns reinforce the statistical findings and support the paralle
 - Results may vary across store size, region, or customer segments
 
 **Next steps:**
-- Segment-level DID analysis (e.g. store type, geography)
 - Longer observation window to assess sustainability
 - Follow-up experiments to optimise specific strategy components
 
