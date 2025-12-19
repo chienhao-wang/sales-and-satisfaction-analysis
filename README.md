@@ -2,7 +2,8 @@
 ### A Controlled A/B Test with Difference-in-Differences Analysis
 
 ![Status](https://img.shields.io/badge/Status-Project_Completed-success)
-![Python](https://img.shields.io/badge/Python-Machine_Learning-3776AB?style=flat&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Statistical%20Analysis-3776AB?style=flat&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-A%2FB%20Testing%20%26%20DID-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 ## Table of Contents
